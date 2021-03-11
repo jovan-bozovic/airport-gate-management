@@ -2,7 +2,11 @@ There are a couple of Gates already in the database. We can choose to create new
 
 Following list is of end points, to interact with the system, with corresponding routes, request and responses.
 
+-----------------------------------------
+
 GET /gates/{gateId}
+
+- Fetching a Gate by it's ID
 
 Response body:
 
@@ -19,6 +23,8 @@ Response body:
 -----------------------------------------
 
 POST /gates
+
+- Creating a Gate
 
 Request body:
 
@@ -47,6 +53,8 @@ Response body:
 
 PUT /gates/{gateId}
 
+- Editing a Gate
+
 Request body:
 
 ```json
@@ -74,6 +82,8 @@ Response body:
 
 POST /assigned-flight
 
+- Creating a Gate Assignment with a flight number that can be alphanumeric
+
 Request param:
 
 ```json
@@ -100,6 +110,8 @@ Response body:
 
 GET /gates/assigned-flight/{gateAssignmentId}
 
+- Fetching a Gate Assignment with it's ID
+
 Response body:
 
 ```json
@@ -114,6 +126,21 @@ Response body:
         "availableTo": "14:00:00"
     }
 }
+```
+
+-----------------------------------------
+
+To run project locally, you can download a JAR file I hosted on my Google Drive.
+After download finishes, open Terminal and navigate to file location, after that run the following.
+
+```
+java -jar airport-gate-management-0.0.1-SNAPSHOT.jar
+```
+
+After starting the project, it will run on port 8080. And you can start using it right away.
+
+```
+GET http://localhost:8080/gates/1
 ```
 
 [Link to executable JAR file](https://drive.google.com/file/d/1Pqp0hOAa2DbR6J8iIBOusONjEAR4kiHh/view?usp=sharing..)
