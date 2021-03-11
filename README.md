@@ -1,4 +1,4 @@
-Airport Gate Management System
+Following list is of end points, to interact with the system, with corresponding routes, request and responses.
 
 GET /gate/{gateId}
 
