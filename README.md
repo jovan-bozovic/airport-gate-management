@@ -10,6 +10,7 @@ Response body:
     "availableFrom": "00:00:00",
     "availableTo": "23:59:59"
 }
+
 -----------------------------------------
 
 POST /gates
@@ -30,6 +31,7 @@ Response body:
     "availableFrom": "01:00:00",
     "availableTo": "05:00:00"
 }
+
 -----------------------------------------
 
 PUT /gates/{gateId}
@@ -50,6 +52,7 @@ Response body:
     "availableFrom": "01:00:00",
     "availableTo": "05:00:00"
 }
+
 -----------------------------------------
 
 POST /assigned-flight
@@ -69,6 +72,7 @@ Response body:
         "availableTo": "14:00:00"
     }
 }
+
 -----------------------------------------
 
 GET /gates/assigned-flight/{gateAssignmentId}
