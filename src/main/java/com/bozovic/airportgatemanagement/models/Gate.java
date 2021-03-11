@@ -20,7 +20,6 @@ public class Gate implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-//    @Column(updatable = false, nullable = false, length = 45)
     @NotEmpty
     private String name;
 
