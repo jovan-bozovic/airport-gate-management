@@ -1,6 +1,8 @@
+There are a couple of Gates already in the database. We can chose to cerate new ones or edit.
+
 Following list is of end points, to interact with the system, with corresponding routes, request and responses.
 
-GET /gate/{gateId}
+GET /gates/{gateId}
 
 Response body:
 
@@ -113,3 +115,5 @@ Response body:
     }
 }
 ```
+
+./https://drive.google.com/file/d/1Pqp0hOAa2DbR6J8iIBOusONjEAR4kiHh/view?usp=sharing../
